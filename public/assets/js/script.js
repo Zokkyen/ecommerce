@@ -23,4 +23,5 @@ window.addEventListener('scroll',()=>{
 
 /* Lecture du JSON au lancement de la page */
 let beersArray = [];
-readJson(beersArray);
+readJson();
+

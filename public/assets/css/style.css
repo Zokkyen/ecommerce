@@ -60,16 +60,47 @@ html {
 .beer {
     height: 40vh;
     border: 10px solid white;
-    background-color: red;
+    background-color: #DDD;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.beer > img{
+    height:16vh;
+    width:9vw;
 
 }
 
-.beer2 {
-    height: 40vh;
-    border: 10px solid white;
-
+.addButtons > button{
+    border-radius:100px;
+    background-color:black;
+    color:white;
+    width:30px;
 }
+.addButtons{
+    display:flex;
+    justify-content:center;
+    
+}
+.addButtons > .displayAmount{
+    margin-left:10px;
+    margin-right:10px;
+}
+.priceCapacity{
+    display:flex;
+    justify-content:space-around;
+}
+.beerName{
+    text-align:center;
+    font-weight:700;
+}
+.beerType{
+    text-align:center;
+}
+.beerSpecsContainer{
 
+    height:50%;
+}
 #footer{
     display: flex;
     justify-content: center;

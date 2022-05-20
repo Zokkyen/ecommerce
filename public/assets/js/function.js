@@ -1,10 +1,12 @@
 // Fonction de lecture du JSON
 let readJson = () => {
-    let beersArray = new Array;
 
-    fetch('public/assets/json/untappd.json').then(response => {
+
+    fetch('public/assets/json/untappd.json')
+    .then(response => {
         return response.json();
-    }).then(data => {
+    })
+    .then(data => {
         /*
             Retourner les valeurs souhaitées du JSON dans un tableau d'objet
 
@@ -18,25 +20,66 @@ let readJson = () => {
             - logo bouteille        : data.response.beers.items[i].beer.beer_label       (texte)
 
         */
+        beersArray= data.response.beers.items;
+        
+        displayAllBeers();
+        return beersArray;
 
-        data.response.beers.items.forEach(item=>{
-            beersArray.push(item);
     })
-    console.log(beersArray)
-    })
-    .catch(err => {
-        alert("Erreur du chargement du JSON")
-    });
+    // .catch(err => {
+    //     alert("Erreur du chargement du JSON")
+    // });
 
-    return beersArray;
+
 }
 
 
 // Fonction affichage de toutes les bières contenues dans le JSON / Tableau d'objet
+
 let displayAllBeers = () => {
+    console.log(beersArray)
+
+    beersArray.forEach(jeanlouis=>{
+        document.getElementById('product').innerHTML += 
+        `<div class="col-6 col-lg-2 col-md-3 beer">
+            <img class="beerLabel" src="${jeanlouis.beer.beer_label}">
+            <div class="beerSpecsContainer">
+                <div class="beerName">${jeanlouis.beer.beer_name}</div>
+                <div class="beerType">${jeanlouis.beer.beer_style}</div>
+                <div class="priceCapacity">
+                    <div class="beerPrice">${jeanlouis.beer.price}€</div>
+                    <div class="beerCapacity">${jeanlouis.beer.capacity}cL</div>
+                </div>
+                <div class="addButtons">
+                    <button class="minusButton" data-id="${jeanlouis.beer.recent_checkin_id}">-</button>
+                    <div class = "displayAmount" data-id="${jeanlouis.beer.recent_checkin_id}">12</div>
+                    <button class="plusButton" data-id="${jeanlouis.beer.recent_checkin_id}">+</button>
+                </div>
+            </div>
+        </div>`
+    })
 /*
     Affichage des bières avec la photo, le nom, le prix et la contenance
 */
+}
+
+function changeAmountButton(){
+    let minusButtons = document.querySelectorAll('.minusButton')
+    minusButtons.forEach(button =>{
+        button.addEventListener('click', countRemove())
+    })
+    let plusButtons = document.querySelectorAll('.minusButton')
+    plusButtons.forEach(button =>{
+        button.addEventListener('click', countAdd())
+    })
+}
+
+function countRemove(event){
+    numberToDecrease = event.target.dataset.id;
+
+}
+function countAdd(event){
+    numberToIncrease = event.target.dataset.id;
 }
 
 // Fonction affichage des bières selon une catégorie (catégories définies par un ID)
