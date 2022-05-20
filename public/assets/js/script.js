@@ -2,9 +2,9 @@ const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
+body.classList.add(scrollDown);
 
-/* Fonction d'ajout du footer quand scroll bas et l'enlever quand scroll haut */
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll',()=>{
     const currentScroll = window.scrollY;
     if (currentScroll >= lastScroll && !body.classList.contains(scrollUp)) {
         body.classList.remove(scrollDown);
