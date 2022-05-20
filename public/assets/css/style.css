@@ -61,13 +61,12 @@ html {
     height: 40vh;
     border: 10px solid white;
     background-color: #DDD;
-    display:flex;
+    /* display:flex; */
     flex-direction:column;
     justify-content:space-between;
 }
 .beer > img{
-    height:16vh;
-    width:9vw;
+    height:50%;
 
 }
 
