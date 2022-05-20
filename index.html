@@ -12,9 +12,9 @@
 </head>
 
 <body>
-<div id="header">
-    <img src="public/assets/img/DDSbeer.png" alt="">
-</div>
+    <div id="header">
+        <img src="public/assets/img/DDSbeer.png" alt="">
+    </div>
     <nav class="navbar navbar-dark bg-dark fixed-top" id="nav">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
@@ -39,15 +39,33 @@
         </button>
     </div>
     <div id="cartContainer">
-        <button class="btn btn-dark">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
-            viewBox="0 0 16 16">
-            <path
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-            </svg>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
         </button>
     </div>
-    
+    <div class="modal fade" id="exampleModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-bs-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark">Paiement</button>
+                        <button type="button" class="btn btn-outline-dark">Vider le panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -61,11 +79,13 @@
     </div>
 
     <div class="row m-0" id="backgroundImage">
-        <div class="col-12 col-md-4 text-light d-flex align-items-center justify-content-center p-0" id="title1">TOUTES VOS
+        <div class="col-12 col-md-4 text-light d-flex align-items-center justify-content-center p-0" id="title1">TOUTES
+            VOS
             BIERES,
             N'IMPORTE O&Ugrave;
         </div>
-        <div class="col-12 offset-md-5 offset-lg-6 col-md-6 text-light d-flex align-items-center justify-content-center p-0" id="title2">PLUS D'1 MILLION
+        <div class="col-12 offset-md-5 offset-lg-6 col-md-6 text-light d-flex align-items-center justify-content-center p-0"
+            id="title2">PLUS D'1 MILLION
             DE
             LIGNES DE JSON
         </div>
@@ -110,11 +130,11 @@
             </div>
         </div>
     </div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-        <script src="public/assets/js/function.js"></script>
-        <script src="public/assets/js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="public/assets/js/function.js"></script>
+    <script src="public/assets/js/script.js"></script>
 </body>
 
 </html>

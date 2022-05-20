@@ -42,7 +42,7 @@ let displayCtgBeers = (id) => {
 
 // Fonction incrément de la quantité d'un article avec son id sur le site
 let addArticle = (id) => {
-
+    
 }
 
 // Fonction décrément de la quantité d'un article en fonction de son id sur le site
@@ -103,9 +103,17 @@ let updateBasket = () => {
 
 // Fonction mise à jour du prix total du panier
 let totalPriceBasket = () => {
+    let total = 0;
+    let basket = JSON.parse(localStorage.getItem('basket'))
+    basket.forEach(element => {
+        total =+ Number(element.price)*Number(element.quantity);
+    });
+    return total
 
 }
+totalPriceBasket()
 
+console.log(totalPriceBasket());
 // Fonction fermeture du panier à l'affichage
 let closeBasket = () => {
 
