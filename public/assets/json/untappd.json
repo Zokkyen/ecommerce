@@ -1,8 +1,7 @@
 {
     "response": {
         "beers": {
-            "items": [
-                {
+            "items": [{
                     "first_checkin_id": 201952879,
                     "recent_checkin_id": 201952879,
                     "rating_score": 4.25,
@@ -20,7 +19,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.677,
-                        "rating_count": 38122
+                        "rating_count": 38122,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 7296,
@@ -61,7 +62,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.556,
-                        "rating_count": 4778
+                        "rating_count": 4778,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 20007,
@@ -102,7 +105,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.501,
-                        "rating_count": 1738
+                        "rating_count": 1738,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1,
@@ -143,7 +148,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.851,
-                        "rating_count": 88437
+                        "rating_count": 88437,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 88,
@@ -184,7 +191,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.611,
-                        "rating_count": 9735
+                        "rating_count": 9735,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1044,
@@ -225,7 +234,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.927,
-                        "rating_count": 2305
+                        "rating_count": 2305,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 23218,
@@ -266,7 +277,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.646,
-                        "rating_count": 963
+                        "rating_count": 963,
+                        "price": 4,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 31802,
@@ -307,7 +320,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.319,
-                        "rating_count": 38057
+                        "rating_count": 38057,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 905,
@@ -348,7 +363,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.541,
-                        "rating_count": 19060
+                        "rating_count": 19060,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 17,
@@ -389,7 +406,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.853,
-                        "rating_count": 131
+                        "rating_count": 131,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 17414,
@@ -430,7 +449,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.118,
-                        "rating_count": 188
+                        "rating_count": 188,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 127814,
@@ -471,7 +492,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.404,
-                        "rating_count": 387
+                        "rating_count": 387,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 127814,
@@ -512,7 +535,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.545,
-                        "rating_count": 452
+                        "rating_count": 452,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 127814,
@@ -553,7 +578,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.286,
-                        "rating_count": 336
+                        "rating_count": 336,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 127814,
@@ -594,7 +621,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.699,
-                        "rating_count": 389
+                        "rating_count": 389,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 127814,
@@ -635,7 +664,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.636,
-                        "rating_count": 171
+                        "rating_count": 171,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 127814,
@@ -676,7 +707,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.505,
-                        "rating_count": 1949
+                        "rating_count": 1949,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 23833,
@@ -717,7 +750,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.85,
-                        "rating_count": 1008
+                        "rating_count": 1008,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 891,
@@ -758,7 +793,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.585,
-                        "rating_count": 1290
+                        "rating_count": 1290,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 891,
@@ -799,7 +836,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.916,
-                        "rating_count": 2094
+                        "rating_count": 2094,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 891,
@@ -840,7 +879,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.671,
-                        "rating_count": 9639
+                        "rating_count": 9639,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 11819,
@@ -881,7 +922,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 0,
-                        "rating_count": 1
+                        "rating_count": 1,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 182705,
@@ -922,7 +965,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.43,
-                        "rating_count": 63557
+                        "rating_count": 63557,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1326,
@@ -963,7 +1008,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.592,
-                        "rating_count": 9696
+                        "rating_count": 9696,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 14665,
@@ -1004,7 +1051,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.544,
-                        "rating_count": 134439
+                        "rating_count": 13443,
+                        "price": 7,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 812,
@@ -1045,7 +1095,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.778,
-                        "rating_count": 87004
+                        "rating_count": 87004,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1142,
@@ -1086,7 +1138,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.777,
-                        "rating_count": 2517
+                        "rating_count": 2517,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 17860,
@@ -1127,7 +1181,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.502,
-                        "rating_count": 162952
+                        "rating_count": 16295,
+                        "price": 6,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 2898,
@@ -1168,7 +1225,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.042,
-                        "rating_count": 117568
+                        "rating_count": 11756,
+                        "price": 6,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 360,
@@ -1209,7 +1269,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.562,
-                        "rating_count": 44004
+                        "rating_count": 44004,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1326,
@@ -1250,7 +1312,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.607,
-                        "rating_count": 3054
+                        "rating_count": 3054,
+                        "price": 8,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 7620,
@@ -1291,7 +1355,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.668,
-                        "rating_count": 7635
+                        "rating_count": 7635,
+                        "price": 8,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1044,
@@ -1332,7 +1398,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.7,
-                        "rating_count": 5885
+                        "rating_count": 5885,
+                        "price": 8,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 17860,
@@ -1373,7 +1441,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.761,
-                        "rating_count": 12869
+                        "rating_count": 12869,
+                        "price": 8,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1,
@@ -1414,7 +1484,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.828,
-                        "rating_count": 3978
+                        "rating_count": 3978,
+                        "price": 8,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 17860,
@@ -1455,7 +1527,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.727,
-                        "rating_count": 10060
+                        "rating_count": 10060,
+                        "price": 8,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2396,
@@ -1496,7 +1570,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.522,
-                        "rating_count": 24559
+                        "rating_count": 24559,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2396,
@@ -1537,7 +1613,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.356,
-                        "rating_count": 11297
+                        "rating_count": 11297,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 4905,
@@ -1578,7 +1656,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.012,
-                        "rating_count": 44470
+                        "rating_count": 44470,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2609,
@@ -1619,7 +1699,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.172,
-                        "rating_count": 44627
+                        "rating_count": 44627,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1204,
@@ -1660,7 +1742,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.435,
-                        "rating_count": 29312
+                        "rating_count": 29312,
+                        "price": 3,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1179,
@@ -1701,7 +1785,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.535,
-                        "rating_count": 1640
+                        "rating_count": 1640,
+                        "price": 3,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 3787,
@@ -1742,7 +1828,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.427,
-                        "rating_count": 890
+                        "rating_count": 890,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 113514,
@@ -1783,7 +1871,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.114,
-                        "rating_count": 164492
+                        "rating_count": 16449,
+                        "price": 5,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 459,
@@ -1824,7 +1915,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.426,
-                        "rating_count": 1386
+                        "rating_count": 1386,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2252,
@@ -1865,7 +1958,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.521,
-                        "rating_count": 3069
+                        "rating_count": 3069,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2252,
@@ -1906,7 +2001,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.802,
-                        "rating_count": 6489
+                        "rating_count": 6489,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2252,
@@ -1947,7 +2044,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.645,
-                        "rating_count": 73998
+                        "rating_count": 73998,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1142,
@@ -1988,7 +2087,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.321,
-                        "rating_count": 769
+                        "rating_count": 769,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 160,
@@ -2029,7 +2130,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.425,
-                        "rating_count": 96983
+                        "rating_count": 96983,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1179,
@@ -2070,7 +2173,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.692,
-                        "rating_count": 18053
+                        "rating_count": 18053,
+                        "price": 9,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 14665,
@@ -2111,7 +2216,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 2.968,
-                        "rating_count": 41971
+                        "rating_count": 41971,
+                        "price": 9,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 152,
@@ -2152,7 +2259,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.562,
-                        "rating_count": 44856
+                        "rating_count": 44856,
+                        "price": 9,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1179,
@@ -2193,7 +2302,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.419,
-                        "rating_count": 22683
+                        "rating_count": 22683,
+                        "price": 9,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1044,
@@ -2234,7 +2345,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.894,
-                        "rating_count": 162001
+                        "rating_count": 16200,
+                        "price": 2,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 459,
@@ -2275,7 +2389,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.529,
-                        "rating_count": 24691
+                        "rating_count": 24691,
+                        "price": 2,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 236,
@@ -2316,7 +2432,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.817,
-                        "rating_count": 19801
+                        "rating_count": 19801,
+                        "price": 2,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 30341,
@@ -2357,7 +2475,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 0,
-                        "rating_count": 1
+                        "rating_count": 1,
+                        "price": 2,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 182705,
@@ -2398,7 +2518,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.468,
-                        "rating_count": 39971
+                        "rating_count": 39971,
+                        "price": 3,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 236,
@@ -2439,7 +2561,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.604,
-                        "rating_count": 53698
+                        "rating_count": 53698,
+                        "price": 3,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 441,
@@ -2480,7 +2604,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.802,
-                        "rating_count": 217668
+                        "rating_count": 21766,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 765,
@@ -2521,7 +2647,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.387,
-                        "rating_count": 3240
+                        "rating_count": 3240,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 865,
@@ -2562,7 +2690,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.458,
-                        "rating_count": 4487
+                        "rating_count": 4487,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 16089,
@@ -2603,7 +2733,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.957,
-                        "rating_count": 54219
+                        "rating_count": 54219,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 604,
@@ -2644,7 +2776,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.497,
-                        "rating_count": 4170
+                        "rating_count": 4170,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 14975,
@@ -2685,7 +2819,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.335,
-                        "rating_count": 26018
+                        "rating_count": 26018,
+                        "price": 6,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2507,
@@ -2726,7 +2862,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.006,
-                        "rating_count": 193520
+                        "rating_count": 19352,
+                        "price": 7,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 2507,
@@ -2767,7 +2906,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.471,
-                        "rating_count": 13086
+                        "rating_count": 13086,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1514,
@@ -2808,7 +2949,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.093,
-                        "rating_count": 6939
+                        "rating_count": 6939,
+                        "price": 7,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1514,
@@ -2849,7 +2992,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.838,
-                        "rating_count": 48453
+                        "rating_count": 48453,
+                        "price": 3,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 259,
@@ -2890,7 +3035,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.07,
-                        "rating_count": 177442
+                        "rating_count": 17744,
+                        "price": 3,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 68,
@@ -2931,7 +3079,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.142,
-                        "rating_count": 4012
+                        "rating_count": 4012,
+                        "price": 3,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 1204,
@@ -2972,7 +3122,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.878,
-                        "rating_count": 145700
+                        "rating_count": 14570,
+                        "price": 3,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 765,
@@ -3013,7 +3166,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.895,
-                        "rating_count": 69884
+                        "rating_count": 69884,
+                        "price": 2,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 765,
@@ -3054,7 +3209,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 4.136,
-                        "rating_count": 73538
+                        "rating_count": 73538,
+                        "price": 2,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 524,
@@ -3095,7 +3252,10 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.578,
-                        "rating_count": 124938
+                        "rating_count": 12493,
+                        "price": 2,
+                        "capacity": 33
+
                     },
                     "brewery": {
                         "brewery_id": 905,
@@ -3136,7 +3296,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.856,
-                        "rating_count": 59434
+                        "rating_count": 59434,
+                        "price": 4,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 907,
@@ -3177,7 +3339,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.675,
-                        "rating_count": 80944
+                        "rating_count": 80944,
+                        "price": 4,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 540,
@@ -3218,7 +3382,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.337,
-                        "rating_count": 14560
+                        "rating_count": 14560,
+                        "price": 4,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2898,
@@ -3259,7 +3425,9 @@
                         "auth_rating": 0,
                         "wish_list": false,
                         "rating_score": 3.452,
-                        "rating_count": 16194
+                        "rating_count": 16194,
+                        "price": 5,
+                        "capacity": 33
                     },
                     "brewery": {
                         "brewery_id": 2927,
