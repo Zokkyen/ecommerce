@@ -4,6 +4,11 @@ html {
     width: 100vw;
     height: 100vh;
 }
+
+#nav{
+    top: 0px;
+}
+
 @media screen and (min-width:768px){
     .navbar{
         display:none;
@@ -65,12 +70,37 @@ html {
 
 }
 
-#footer {
+#footer{
+    display: flex;
+    justify-content: center;
     bottom: 0;
-    position: fixed;
+    position:fixed;
     height: 175px;
     width: 100vw;
     background-color: black;
+}
+
+@media (min-width: 992px){
+    #footer{
+        width: 100vw;
+    }
+}
+
+#contact{
+
+}
+
+#fb{
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
+
+}
+
+#ig{
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
 }
 
 #footer {
