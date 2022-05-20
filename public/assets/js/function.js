@@ -1,9 +1,33 @@
 // Fonction de lecture du JSON
 let readJson = () => {
-/*
-    Retourner les valeurs souhaitées du JSON dans un tableau d'objet
-*/
+    let beersArray = [];
+
+    fetch('public/assets/json/untappd.json').then(response => {
+        return response.json();
+    }).then(data => {
+
+        console.log(data.response.beers.items[i])
+        /*
+            Retourner les valeurs souhaitées du JSON dans un tableau d'objet
+
+            - id                    : data.response.beers.items[i].recent_checkin_id     (nombre entier)
+            - nom de la bouteille   : data.response.beers.items[i].beer.beer_name        (texte)
+            - nom de la Brasserie   : data.response.beers.items[i].brewery.brewery_name  (texte)
+            - degré d'alcool        : data.response.beers.items[i].beer.beer_abv         (nombre flotant)
+            - type de bière         : data.response.beers.items[i].beer.beer_style       (texte)
+            - prix                  : data.response.beers.items[i].beer.price            (nombre entier)
+            - contenance            : data.response.beers.items[i].beer.capacity         (nombre entier)
+            - logo bouteille        : data.response.beers.items[i].beer.beer_label       (texte)
+
+        */
+
+    }).catch(err => {
+        alert("Erreur du chargement du JSON")
+    });
+
+    return beersArray;
 }
+
 
 // Fonction affichage de toutes les bières contenues dans le JSON / Tableau d'objet
 let displayAllBeers = () => {
@@ -36,7 +60,18 @@ let confirmAdding = (id) => {
     /*
         Fonction ajout d'un article par son ID et la fonction retourne true ou false "en fonction des stocks"
     */
-    return '...';
+
+    /* Exemple d'ajout en localStorage
+    [
+        {
+            "idBeer": 80,
+            "quantity": 1,
+            "price": "5",
+        }
+    ]
+    */
+
+    return true;
 }
 
 // Fonction affichage confirmation d'ajout d'un article

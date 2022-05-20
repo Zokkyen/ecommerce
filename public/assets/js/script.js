@@ -1,3 +1,5 @@
+/* Fonction pour le comportement du footer */
+
 const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
@@ -18,3 +20,7 @@ window.addEventListener('scroll',()=>{
     }
     lastScroll = currentScroll;
 });
+
+/* Lecture du JSON au lancement de la page */
+let beersArray = [];
+readJson(beersArray);
