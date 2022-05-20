@@ -9,7 +9,13 @@ html {
     top: 0px;
 }
 
-#backgroundImage{
+@media screen and (min-width:768px){
+    .navbar{
+        display:none;
+    }
+}
+
+#backgroundImage {
     background-image: url("../img/header-brasserie-biere.jpg");
     height: 100vh;
     background-repeat: no-repeat;
@@ -82,4 +88,22 @@ html {
 
 .scroll-up #footer {
     transform: none;
+}
+@media screen and (min-width:767px){
+#cartContainer{
+    position: fixed;
+    height:50px;
+    width: 100px;
+    background-color:black;
+    top:25px;
+    right:25px;
+}
+#burgerContainer{
+    position: fixed;
+    height:50px;
+    width: 100px;
+    background-color:black;
+    top:25px;
+    left:25px;
+}
 }
