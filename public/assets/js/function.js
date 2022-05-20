@@ -5,8 +5,6 @@ let readJson = () => {
     fetch('public/assets/json/untappd.json').then(response => {
         return response.json();
     }).then(data => {
-
-        console.log(data.response.beers.items[i])
         /*
             Retourner les valeurs souhaitées du JSON dans un tableau d'objet
 
@@ -20,7 +18,6 @@ let readJson = () => {
             - logo bouteille        : data.response.beers.items[i].beer.beer_label       (texte)
 
         */
-
     }).catch(err => {
         alert("Erreur du chargement du JSON")
     });
