@@ -1,6 +1,5 @@
 // Fonction de lecture du JSON
-let readJson = () => {
-    let beersArray = [];
+let readJson = (beersArray) => {
 
     fetch('public/assets/json/untappd.json').then(response => {
         return response.json();
@@ -18,11 +17,10 @@ let readJson = () => {
             - logo bouteille        : data.response.beers.items[i].beer.beer_label       (texte)
 
         */
+        //return beersArray;
     }).catch(err => {
         alert("Erreur du chargement du JSON")
     });
-
-    return beersArray;
 }
 
 
@@ -88,11 +86,6 @@ let addArticleToBasket = (id) => {
 
 // Fonction supprimer de l'article par son id dans le localStorage
 let remArticleToBasket = (id) => {
-
-}
-
-// Fonction ouverture du panier à l'affichage
-let openBasket = () => {
 
 }
 
