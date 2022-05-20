@@ -14,21 +14,21 @@ html {
         display:none;
     }
 }
+
 @media screen and (min-width:768px){
+    #header{
+        width:100vw;
+        height:230px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color: #333
+    }
+    #header > img{
+        height:200px;
+    }
+}
 
-
-#header{
-    width:100vw;
-    height:230px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color: #333
-}
-#header > img{
-    height:200px;
-}
-}
 @media screen and (max-width:767px){
     #header > img{
         display:none;
@@ -40,6 +40,7 @@ html {
         display:none;
     }
 }
+
 #backgroundImage {
     background-image: url("../img/header-brasserie-biere.jpg");
     height: 100vh;
@@ -50,7 +51,6 @@ html {
 
 #title1 {
     font-weight: 500;
-
 }
 
 #title2 {
@@ -86,9 +86,6 @@ html {
     }
 }
 
-#contact{
-
-}
 
 #fb{
     height: 50px;
@@ -106,10 +103,12 @@ html {
 #footer {
     transition: transform 0.4s;
 }
+
 #blankFooter{
     height:175px;
     width:100vw;
 }
+
 .scroll-down #footer {
     transform: translate3d(0, 100%, 0);
 }
@@ -117,21 +116,23 @@ html {
 .scroll-up #footer {
     transform: none;
 }
+
 @media screen and (min-width:767px){
-#cartContainer{
-    position: fixed;
-    height:50px;
-    width: 100px;
-    background-color:#212529;
-    top:25px;
-    right:25px;
+    #cartContainer{
+        position: fixed;
+        height:50px;
+        width: 100px;
+        background-color:#212529;
+        top:25px;
+        right:25px;
+    }
+    #burgerContainer{
+        position: fixed;
+        height:50px;
+        width: 100px;
+        background-color:#212529;
+        top:25px;
+        left:25px;
+    }
 }
-#burgerContainer{
-    position: fixed;
-    height:50px;
-    width: 100px;
-    background-color:#212529;
-    top:25px;
-    left:25px;
-}
-}
+
