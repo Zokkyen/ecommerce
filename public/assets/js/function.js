@@ -1,6 +1,6 @@
 // Fonction de lecture du JSON
 let readJson = () => {
-    let beersArray = [];
+    let beersArray = new Array;
 
     fetch('public/assets/json/untappd.json').then(response => {
         return response.json();
@@ -18,7 +18,13 @@ let readJson = () => {
             - logo bouteille        : data.response.beers.items[i].beer.beer_label       (texte)
 
         */
-    }).catch(err => {
+
+        data.response.beers.items.forEach(item=>{
+            beersArray.push(item);
+    })
+    console.log(beersArray)
+    })
+    .catch(err => {
         alert("Erreur du chargement du JSON")
     });
 
