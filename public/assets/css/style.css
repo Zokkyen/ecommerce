@@ -1,0 +1,41 @@
+#backgroundImage{
+    background-image: url("../img/header-brasserie-biere.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#title1{
+    font-weight: 500;
+    
+}
+
+#title2{
+    font-weight: 500;
+}
+
+.beer{
+    height:40vh;
+    border: 10px solid white;
+    background-color: red;
+
+}
+
+.beer2{
+    height:40vh;
+    border: 10px solid white;
+
+}
+
+
+
+#footer{
+    bottom: 0;
+    position: fixed;
+    height: 175px;
+    width: 100vh;
+    background-color: black;
+}
+
