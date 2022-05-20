@@ -2,14 +2,14 @@
     background-image: url("../img/header-brasserie-biere.jpg");
     height: 100vh;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: center center;
     background-size: cover;
 }
 
 #title1{
     font-weight: 500;
-    
+
 }
 
 #title2{
@@ -31,7 +31,7 @@
 
 
 
-#footer{
+.footer{
     bottom: 0;
     position: fixed;
     height: 175px;
@@ -39,3 +39,8 @@
     background-color: black;
 }
 
+@media (min-width: 992px){
+    .footer{
+        width: 100vw;
+    }
+}
