@@ -61,9 +61,6 @@ html {
     }
 }
 
-#contact{
-
-}
 
 #fb{
     height: 50px;
@@ -89,21 +86,23 @@ html {
 .scroll-up #footer {
     transform: none;
 }
+
 @media screen and (min-width:767px){
-#cartContainer{
-    position: fixed;
-    height:50px;
-    width: 100px;
-    background-color:black;
-    top:25px;
-    right:25px;
+    #cartContainer{
+        position: fixed;
+        height:50px;
+        width: 100px;
+        background-color:black;
+        top:25px;
+        right:25px;
+    }
+    #burgerContainer{
+        position: fixed;
+        height:50px;
+        width: 100px;
+        background-color:black;
+        top:25px;
+        left:25px;
+    }
 }
-#burgerContainer{
-    position: fixed;
-    height:50px;
-    width: 100px;
-    background-color:black;
-    top:25px;
-    left:25px;
-}
-}
+
