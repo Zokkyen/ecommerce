@@ -1,37 +1,41 @@
-#backgroundImage{
+html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#backgroundImage {
     background-image: url("../img/header-brasserie-biere.jpg");
     height: 100vh;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
 }
 
-#title1{
+#title1 {
     font-weight: 500;
-    
+
 }
 
-#title2{
+#title2 {
     font-weight: 500;
 }
 
-.beer{
-    height:40vh;
+.beer {
+    height: 40vh;
     border: 10px solid white;
     background-color: red;
 
 }
 
-.beer2{
-    height:40vh;
+.beer2 {
+    height: 40vh;
     border: 10px solid white;
 
 }
 
-
-
-#footer{
+#footer {
     bottom: 0;
     position: fixed;
     height: 175px;
@@ -41,11 +45,12 @@
 
 #footer {
     transition: transform 0.4s;
-  }
-   
-  .scroll-down #footer {
+}
+
+.scroll-down #footer {
     transform: translate3d(0, 100%, 0);
-  }
-  .scroll-up #footer {
+}
+
+.scroll-up #footer {
     transform: none;
-  }
+}
