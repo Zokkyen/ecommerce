@@ -102,6 +102,30 @@ body {
     }
 }
 
+@media screen and (max-width:767px) {
+    #header > img{
+        display:none;
+    }
+    #cartContainer > button{
+        display:none;
+    }
+    #burgerContainer > button{
+        display:none;
+    }
+}
+
+/*---------- Partie du Main ----------*/
+
+.beer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    border: 10px solid white;
+    background-color: red;
+    height: 40vh;
+}
+
 .addButtons > button {
     border-radius:100px;
     background-color:black;
@@ -136,30 +160,6 @@ body {
 
 .beerSpecsContainer {
     height:50%;
-}
-
-@media screen and (max-width:767px) {
-    #header > img{
-        display:none;
-    }
-    #cartContainer > button{
-        display:none;
-    }
-    #burgerContainer > button{
-        display:none;
-    }
-}
-
-/*---------- Partie du Main ----------*/
-
-.beer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    border: 10px solid white;
-    background-color: red;
-    height: 40vh;
 }
 
 /*---------- Partie du Footer ----------*/
