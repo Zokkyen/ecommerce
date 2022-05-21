@@ -102,6 +102,54 @@ body {
     }
 }
 
+.addButtons > button {
+    border-radius:100px;
+    background-color:black;
+    color:white;
+    width:30px;
+}
+
+.addButtons {
+    display:flex;
+    justify-content:center;
+    
+}
+
+.addButtons > .displayAmount {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.priceCapacity {
+    display:flex;
+    justify-content:space-around;
+}
+
+.beerName {
+    text-align:center;
+    font-weight:700;
+}
+
+.beerType {
+    text-align:center;
+}
+
+.beerSpecsContainer {
+    height:50%;
+}
+
+@media screen and (max-width:767px) {
+    #header > img{
+        display:none;
+    }
+    #cartContainer > button{
+        display:none;
+    }
+    #burgerContainer > button{
+        display:none;
+    }
+}
+
 /*---------- Partie du Main ----------*/
 
 .beer {
