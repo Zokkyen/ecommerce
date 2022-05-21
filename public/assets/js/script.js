@@ -1,5 +1,4 @@
 /* Fonction pour le comportement du footer */
-
 const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
