@@ -1,47 +1,19 @@
-html {
-    margin: 0;
+/*---------- Initialisation du HTML ----------*/
+
+*{
+    box-sizing: border-box;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
 }
 
-#nav{
-    top: 0px;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-@media screen and (min-width:768px){
-    .navbar{
-        display:none;
-    }
-}
+/*---------- Partie du Header ----------*/
 
-@media screen and (min-width:768px){
-    #header{
-        width:100vw;
-        height:230px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        background-color: #333
-    }
-    #header > img{
-        height:200px;
-    }
-}
-
-@media screen and (max-width:767px){
-    #header > img{
-        display:none;
-    }
-    #cartContainer > button{
-        display:none;
-    }
-    #burgerContainer > button{
-        display:none;
-    }
-}
-
-#backgroundImage {
+.backgroundImage {
     background-image: url("../img/header-brasserie-biere.jpg");
     height: 100vh;
     background-repeat: no-repeat;
@@ -49,72 +21,47 @@ html {
     background-size: cover;
 }
 
+.nav {
+    top: 0px;
+}
+
 .logoMobile {
     width: 8%;
 }
 
-#title1 {
+.title1 {
+    position: absolute;
     font-weight: 500;
-    bottom: 30%;
+    color: white;
+    top: 12vh;
 }
 
-#title2 {
+.title2 {
+    position: absolute;
     font-weight: 500;
+    color: white;
+    top: 38vh;
 }
 
-.beer {
-    height: 40vh;
-    border: 10px solid white;
-    /*padding: 10%;*/
-    background-color: red;
+.logoDesktop {
+    height: 200px;
 }
 
-#footer{
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    position:fixed;
-    height: 175px;
-    width: 100vw;
-    background-color: black;
-    transition: transform 0.4s;
-}
-
-#blankFooter{
-    height:175px;
-    width:100vw;
-}
-
-@media (min-width: 992px){
-    #footer{
-        width: 100vw;
+@media screen and (min-width:768px) {
+    #header{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:30vh;
+        background-color: #333;
     }
-}
-
-#fb{
-    height: 50px;
-    width: 50px;
-    filter: brightness(0) invert(1);
-}
-
-#ig{
-    height: 50px;
-    width: 50px;
-    filter: brightness(0) invert(1);
-}
-
-.scroll-down #footer {
-    transform: translate3d(0, 100%, 0);
-}
-
-.scroll-up #footer {
-    transform: none;
-}
-
-@media screen and (min-width:767px){
+    .navbar{
+        display:none;
+    }
     #cartContainer{
         position: fixed;
-        height:50px;
+        display: flex;
+        height: 50px;
         width: 100px;
         background-color:#212529;
         top:25px;
@@ -128,5 +75,90 @@ html {
         top:25px;
         left:25px;
     }
+    .backgroundImage {
+        height: 70vh;
+    }
+    .title1 {
+        position: absolute;
+        top: 25vh;
+        left: 15vh;
+    }
+    .title2 {
+        position: absolute;
+        top: 40vh;
+        right: 15vh;
+    }
 }
 
+@media screen and (max-width:767px) {
+    #header > img{
+        display:none;
+    }
+    #cartContainer > button{
+        display:none;
+    }
+    #burgerContainer > button{
+        display:none;
+    }
+}
+
+/*---------- Partie du Main ----------*/
+
+.beer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    border: 10px solid white;
+    background-color: red;
+    height: 40vh;
+}
+
+/*---------- Partie du Footer ----------*/
+
+.blankFooter {
+    height:175px;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 100%;
+    position:fixed;
+    margin: 0;
+    bottom: 0;
+    background-color: black;
+    transition: transform 0.4s;
+}
+
+.facebookLogo {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.instaLogo {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.scroll-down .footer {
+    transform: translate3d(0, 100%, 0);
+}
+
+.scroll-up .footer {
+    transform: none;
+}
+
+@media screen and (min-width:767px){
+    .footer{
+        height: 120px;
+    }
+    .blankFooter {
+        height: 120px;
+    }
+}

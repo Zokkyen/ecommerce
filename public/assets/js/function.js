@@ -96,7 +96,12 @@ let updateBasket = () => {
 
 // Fonction mise à jour du prix total du panier
 let totalPriceBasket = () => {
-
+    let total = 0;
+    let basket = JSON.parse(localStorage.getItem('basket'))
+    basket.forEach(element => {
+        total =+ Number(element.price)*Number(element.quantity);
+    });
+    return total
 }
 
 // Fonction fermeture du panier à l'affichage
