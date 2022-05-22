@@ -122,16 +122,15 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* word-wrap: break-word; */
     border: 10px solid white;
-    background-color: rgba(255, 0, 0, 0.089);
+    background-color: rgba(124, 56, 0, 0.425);
     height: 40vh;
     justify-content:space-between;
     align-items:center;
+    border-radius: 20px;
 }
 
 .functionalities{
-
     display:flex;
     flex-direction:column;  
 }
@@ -139,64 +138,75 @@ body {
 .addButtons {
     display:flex;
     justify-content:center;
-    
 }
 
 .beerLabel{
     max-height:50%;
     max-width:50%;
-
+    margin-top: 10px;
+    border-radius: 5px;
 }
-
 
 .addButtons > button {
     border-radius:100px;
-    /* background-color:black; */
     color:white;
-    width:30px;
-    height:30px;
-    text-align:center;
-    display:flex;
-    justify-content:center;
-    align-items:center; 
-    margin-bottom:10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .addButtons > button > img{
-    height:10px;
+    height: 10px;
     filter: brightness(0) invert(1);
 }
 
 .addButtons > .displayAmount {
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .priceCapacity {
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27px;
+    margin-right: 18px;
+    margin-bottom: 10px;  
 }
 
 .beerName {
-    text-align:center;
+    text-align: center;
     font-family: 'Koulen', cursive;
-    font-weight:700;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .beerType {
-    text-align:center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .beerSpecsContainer {
-    display:flex;
-    flex-direction:column;
-    height:50%;
-    justify-content:flex-end;
-
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: flex-end;
 }
 
 .functionalities > button{
-    width:150px;
+    width: 150px;
     margin: 10px;
+}
+
+@media screen and (min-width:767px){
+    .priceCapacity {
+        margin-left: 27px;
+        margin-right: 18px;
+    }
 }
 
 /*---------- Partie du Footer ----------*/
@@ -245,5 +255,21 @@ body {
     }
     .blankFooter {
         height: 120px;
+    }
+}
+
+/*---------- Le Panier ----------*/
+
+.modal {
+    left: unset;
+    right: 0;
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (min-width:767px){
+    .modal-dialog {  
+        margin-right: 2vh;
+        margin-top: 2vh;
     }
 }

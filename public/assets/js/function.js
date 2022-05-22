@@ -6,8 +6,6 @@ let readJson = () => {
     })
     .then(data => {
         /*
-            Retourner les valeurs souhaitées du JSON dans un tableau d'objet
-
             - id                    : data.response.beers.items[i].recent_checkin_id     (nombre entier)
             - nom de la bouteille   : data.response.beers.items[i].beer.beer_name        (texte)
             - nom de la Brasserie   : data.response.beers.items[i].brewery.brewery_name  (texte)
@@ -16,47 +14,56 @@ let readJson = () => {
             - prix                  : data.response.beers.items[i].beer.price            (nombre entier)
             - contenance            : data.response.beers.items[i].beer.capacity         (nombre entier)
             - logo bouteille        : data.response.beers.items[i].beer.beer_label       (texte)
-
         */
         beersArray = data.response.beers.items;
         displayAllBeers();
         return beersArray;
     })
     .catch(err => {
-        alert("Erreur du chargement du JSON")
+        console.log("Erreur du chargement du JSON");
     });
 }
 
+// Fonction de check si l'image est disponible
+function imageExists(image_url){
+    var http = new XMLHttpRequest();
+    http.open('GET', image_url, false);
+    http.send();
+    return http.status != 403;
+}
 
 // Fonction affichage de toutes les bières contenues dans le JSON / Tableau d'objet
 let displayAllBeers = () => {
-    console.log(beersArray)
-
     beersArray.forEach(jeanlouis=>{
-        document.getElementById('product').innerHTML += 
-        `<div class="col-6 col-lg-2 col-md-3 beer">
-            <img class="beerLabel" src="${jeanlouis.beer.beer_label}">
-            <div class="beerSpecsContainer">
-                <div class="beerName">${jeanlouis.beer.beer_name}</div>
-                <div class="beerType">${jeanlouis.beer.beer_style}</div>
-                <div class="priceCapacity">
-                    <div class="beerPrice">${jeanlouis.beer.price}€</div>
-                    <div class="beerCapacity">${jeanlouis.beer.capacity}cL</div>
-                </div>
-                    <div class="functionalities">
-                        <div class="addButtons">
-                        <button class="minusButton btn btn-dark" data-id="minus${jeanlouis.recent_checkin_id}">
-                            <img data-id="minus${jeanlouis.recent_checkin_id}" src="public/assets/img/minus.svg">
-                        </button>
-                        <div class = "displayAmount" data-id="number${jeanlouis.recent_checkin_id}">12</div>
-                        <button class="plusButton btn btn-dark" data-id="plus${jeanlouis.recent_checkin_id}">
-                        <img data-id="plus${jeanlouis.recent_checkin_id}" src="public/assets/img/plus-svgrepo-com.svg">
-                        </button>
+        if((imageExists(jeanlouis.beer.beer_label)) && (jeanlouis.beer.beer_label != "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png")) {
+            document.getElementById('product').innerHTML += 
+                `<div class="col-6 col-lg-2 col-md-3 beer">
+                    <img class="beerLabel" src="${jeanlouis.beer.beer_label}">
+                    <div class="beerSpecsContainer">
+                        <div class="beerName">${jeanlouis.beer.beer_name}</div>
+                        <div class="beerType">${jeanlouis.beer.beer_style}</div>
+                        <div class="priceCapacity">
+                            <div class="beerPrice">${jeanlouis.beer.price}€</div>
+                            <div class="beerCapacity">${jeanlouis.beer.capacity}cL</div>
+                        </div>
+
+                        <div class="functionalities">
+                            <div class="addButtons">
+                            <button class="minusButton btn btn-dark" data-id="minus${jeanlouis.recent_checkin_id}">
+                                <img data-id="minus${jeanlouis.recent_checkin_id}" src="public/assets/img/minus.svg">
+                            </button>
+                            <div class="displayAmount" data-id="number${jeanlouis.recent_checkin_id}">0</div>
+                            <button class="plusButton btn btn-dark" data-id="plus${jeanlouis.recent_checkin_id}">
+                                <img data-id="plus${jeanlouis.recent_checkin_id}" src="public/assets/img/plus-svgrepo-com.svg">
+                            </button>
+                        </div>
+
+                        <button class="btn btn-dark" data-id="cart${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
                     </div>
-                    <button class="btn btn-dark" data-id="cart${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
-                </div>
-            </div>
-        </div>`
+                </div>`            
+        }
+
+
     })
 }
 

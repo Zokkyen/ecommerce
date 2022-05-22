@@ -1,4 +1,4 @@
-/* Fonction pour le comportement du footer */
+/* Comportement du footer */
 const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
@@ -20,17 +20,21 @@ window.addEventListener('scroll',()=>{
     lastScroll = currentScroll;
 });
 
-/* Lecture du JSON au lancement de la page */
+/* Lecture du JSON au lancement de la page + affichage */
 let beersArray = [];
 readJson();
-// let minusButtons = document.querySelectorAll('.minusButton');
-// minusButtons.forEach(button =>{
-//     button.addEventListener('click', function(e){
-//         numberToDecrease = e.target.dataset.id;
-//         console.log(numberToDecrease);
-//     })
-// })
+console.log(beersArray)
+
+let minusButtons = document.querySelectorAll('.minusButton');
+minusButtons.forEach(button =>{
+    button.addEventListener('click', function(e){
+        numberToDecrease = e.target.dataset.id;
+        console.log(numberToDecrease);
+    })
+})
+
 document.addEventListener('click', function(e){
             numberToDecrease = e.target.dataset.id;
             console.log(numberToDecrease);
 })
+
