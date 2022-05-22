@@ -122,21 +122,32 @@ body {
     flex-direction: column;
     word-wrap: break-word;
     border: 10px solid white;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.089);
     height: 40vh;
 }
 
-.addButtons > button {
-    border-radius:100px;
-    background-color:black;
-    color:white;
-    width:30px;
-}
+
 
 .addButtons {
     display:flex;
     justify-content:center;
     
+}
+
+.addButtons > button {
+    border-radius:100px;
+    /* background-color:black; */
+    color:white;
+    width:30px;
+    height:30px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+}
+.addButtons > button > img{
+    height:10px;
+    filter: brightness(0) invert(1);
 }
 
 .addButtons > .displayAmount {
@@ -159,7 +170,16 @@ body {
 }
 
 .beerSpecsContainer {
+    display:flex;
+    flex-direction:column;
+
     height:50%;
+    justify-content:flex-end;
+}
+
+.beerSpecsContainer > button{
+    margin-bottom:10px;
+    margin-top:10px;
 }
 
 /*---------- Partie du Footer ----------*/

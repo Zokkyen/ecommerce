@@ -44,10 +44,15 @@ let displayAllBeers = () => {
                     <div class="beerCapacity">${jeanlouis.beer.capacity}cL</div>
                 </div>
                 <div class="addButtons">
-                    <button class="minusButton" data-id="${jeanlouis.beer.recent_checkin_id}">-</button>
-                    <div class = "displayAmount" data-id="${jeanlouis.beer.recent_checkin_id}">12</div>
-                    <button class="plusButton" data-id="${jeanlouis.beer.recent_checkin_id}">+</button>
+                    <button class="minusButton btn btn-dark" data-id="${jeanlouis.recent_checkin_id}">
+                        <img src="public/assets/img/minus.svg">
+                    </button>
+                    <div class = "displayAmount" data-id="${jeanlouis.recent_checkin_id}">12</div>
+                    <button class="plusButton btn btn-dark" data-id="${jeanlouis.recent_checkin_id}">
+                    <img src="public/assets/img/plus-svgrepo-com.svg">
+                    </button>
                 </div>
+                <button class="btn btn-dark" data-id="${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
             </div>
         </div>`
     })
@@ -66,6 +71,7 @@ function changeAmountButton(){
 
 function countRemove(event){
     numberToDecrease = event.target.dataset.id;
+    console.log(numberToDecrease);
 
 }
 function countAdd(event){
