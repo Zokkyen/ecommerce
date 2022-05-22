@@ -23,4 +23,14 @@ window.addEventListener('scroll',()=>{
 /* Lecture du JSON au lancement de la page */
 let beersArray = [];
 readJson();
-changeAmountButton();
+// let minusButtons = document.querySelectorAll('.minusButton');
+// minusButtons.forEach(button =>{
+//     button.addEventListener('click', function(e){
+//         numberToDecrease = e.target.dataset.id;
+//         console.log(numberToDecrease);
+//     })
+// })
+document.addEventListener('click', function(e){
+            numberToDecrease = e.target.dataset.id;
+            console.log(numberToDecrease);
+})

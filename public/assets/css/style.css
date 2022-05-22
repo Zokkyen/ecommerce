@@ -66,6 +66,7 @@ body {
         background-color:#212529;
         top:25px;
         right:25px;
+        z-index:5;
     }
     #burgerContainer{
         position: fixed;
@@ -74,6 +75,7 @@ body {
         background-color:#212529;
         top:25px;
         left:25px;
+        z-index:5;
     }
     .backgroundImage {
         height: 70vh;
@@ -120,19 +122,32 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     border: 10px solid white;
     background-color: rgba(255, 0, 0, 0.089);
     height: 40vh;
+    justify-content:space-between;
+    align-items:center;
 }
 
+.functionalities{
 
+    display:flex;
+    flex-direction:column;  
+}
 
 .addButtons {
     display:flex;
     justify-content:center;
     
 }
+
+.beerLabel{
+    max-height:50%;
+    max-width:50%;
+
+}
+
 
 .addButtons > button {
     border-radius:100px;
@@ -142,8 +157,9 @@ body {
     height:30px;
     text-align:center;
     display:flex;
-    justify-content: center;
+    justify-content:center;
     align-items:center; 
+    margin-bottom:10px;
 }
 .addButtons > button > img{
     height:10px;
@@ -162,6 +178,7 @@ body {
 
 .beerName {
     text-align:center;
+    font-family: 'Koulen', cursive;
     font-weight:700;
 }
 
@@ -172,14 +189,14 @@ body {
 .beerSpecsContainer {
     display:flex;
     flex-direction:column;
-
     height:50%;
     justify-content:flex-end;
+
 }
 
-.beerSpecsContainer > button{
-    margin-bottom:10px;
-    margin-top:10px;
+.functionalities > button{
+    width:150px;
+    margin: 10px;
 }
 
 /*---------- Partie du Footer ----------*/

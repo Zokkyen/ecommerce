@@ -43,16 +43,18 @@ let displayAllBeers = () => {
                     <div class="beerPrice">${jeanlouis.beer.price}€</div>
                     <div class="beerCapacity">${jeanlouis.beer.capacity}cL</div>
                 </div>
-                <div class="addButtons">
-                    <button class="minusButton btn btn-dark" data-id="${jeanlouis.recent_checkin_id}">
-                        <img src="public/assets/img/minus.svg">
-                    </button>
-                    <div class = "displayAmount" data-id="${jeanlouis.recent_checkin_id}">12</div>
-                    <button class="plusButton btn btn-dark" data-id="${jeanlouis.recent_checkin_id}">
-                    <img src="public/assets/img/plus-svgrepo-com.svg">
-                    </button>
+                    <div class="functionalities">
+                        <div class="addButtons">
+                        <button class="minusButton btn btn-dark" data-id="minus${jeanlouis.recent_checkin_id}">
+                            <img data-id="minus${jeanlouis.recent_checkin_id}" src="public/assets/img/minus.svg">
+                        </button>
+                        <div class = "displayAmount" data-id="number${jeanlouis.recent_checkin_id}">12</div>
+                        <button class="plusButton btn btn-dark" data-id="plus${jeanlouis.recent_checkin_id}">
+                        <img data-id="plus${jeanlouis.recent_checkin_id}" src="public/assets/img/plus-svgrepo-com.svg">
+                        </button>
+                    </div>
+                    <button class="btn btn-dark" data-id="cart${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
                 </div>
-                <button class="btn btn-dark" data-id="${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
             </div>
         </div>`
     })
@@ -70,8 +72,7 @@ function changeAmountButton(){
 }
 
 function countRemove(event){
-    numberToDecrease = event.target.dataset.id;
-    console.log(numberToDecrease);
+ 
 
 }
 function countAdd(event){
