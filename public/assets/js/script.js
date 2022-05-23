@@ -32,59 +32,56 @@ let minusButtons = document.querySelectorAll('.minusButton');
 //         console.log(numberToDecrease);
 //     })
 // })
-let amountCounterValue = 12;
-let specifiedAmount = amountCounterValue;
+
 
 document.addEventListener('click', function(e){
     let amountCounter = document.querySelectorAll('.displayAmount');
-
-    
-    console.log(specifiedAmount.length)
     datasetId = e.target.dataset.id;
     if(/minus/.test(datasetId)){
         let minusId = datasetId.substring(5);
-
-        amountCounter.forEach(element=>{
-            let numberId = element.dataset.id.substring(6);
-            // let specifiedAmount = amountCounterValue;
-
-            if (minusId == numberId){
-                if (specifiedAmount>1){
-                    specifiedAmount = specifiedAmount - 1;
-                    element.innerHTML = specifiedAmount;
-                }else {
-                    specifiedAmount = 1;
-                    element.innerHTML = specifiedAmount;
-                }
+        beersArray.forEach(beerElement=>{
+            if (beerElement.recent_checkin_id == minusId){
+                if (beerElement.count>1){
+                    beerElement.count--;
+                    console.log(beerElement)
+                    }  
+                amountCounter.forEach(counter=>{
+                    console.log(counter.dataset.id);
+                    let parsedCounterID = counter.dataset.id.substring(6);
+                    if(beerElement.recent_checkin_id == parsedCounterID){
+                        counter.innerHTML=beerElement.count;
+                    }
+                })
             }
-            i++;
         })
+
     }else if(/plus/.test(datasetId)){
             let plusId = datasetId.substring(4);
-            amountCounter.forEach(element=>{
-                let numberId = element.dataset.id.substring(6);
-
-                if (plusId == numberId){
-                    
-                    console.log(specifiedAmount)
-                    specifiedAmount++
-                    element.innerHTML = specifiedAmount;
+            beersArray.forEach(beerElement=>{
+                if (beerElement.recent_checkin_id == plusId){
+                        beerElement.count++;
+                    amountCounter.forEach(counter=>{
+                        let parsedCounterID = counter.dataset.id.substring(6);
+                        if(beerElement.recent_checkin_id == parsedCounterID){
+                            counter.innerHTML=beerElement.count;
+                        }
+                    })
                 }
             })
     }
     else if (/cart/.test(datasetId)){
         let price = 5;
+        let amount = 1;
         let cartId = datasetId.substring(4);
         console.log(beersArray);
         beersArray.forEach(jeanlouis=>{
             if(jeanlouis.recent_checkin_id == cartId){
                 price = jeanlouis.beer.price;
+                amount = jeanlouis.count;
             }
         })
         let basket = JSON.parse(localStorage.getItem('basket')) ?? [];
-        basket.push({"idBeer":cartId,"quantity":amountCounterValue,'price':price})
+        basket.push({"idBeer":cartId,"quantity":amount,'price':price})
         localStorage.setItem('basket', JSON.stringify(basket));
     }
-
-
 })
