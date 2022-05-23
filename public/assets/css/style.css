@@ -148,6 +148,7 @@ body {
     max-height:50%;
     max-width:50%;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -188,6 +189,8 @@ body {
     font-weight: bold;
     font-size: 1.0rem;
     margin-bottom: 5px;
+    margin-top: 20px;
+    white-space: pre-line;
 }
 
 .beerType {

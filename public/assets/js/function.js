@@ -93,12 +93,12 @@ let displayCtgBeers = (id) => {
 }
 
 // Fonction incrément de la quantité d'un article avec son id sur le site
-let addArticle = (id) => {
+let addQuantity = (id) => {
 
 }
 
 // Fonction décrément de la quantité d'un article en fonction de son id sur le site
-let remArticle = (id) => {
+let remQuantity = (id) => {
 /*
     Doit empêcher la valeur de la quantité en dessous de 0
 */
@@ -129,9 +129,8 @@ let displayTrueAdding = () => {
 }
 
 // Fonction affichage problème d'ajout d'un article
-let displayFalseAdding = () => {
-
-}
+/*let displayFalseAdding = () => {
+}*/
 
 // Fonction ajout de l'article par son id dans le localStorage
 let addArticleToBasket = (id) => {
@@ -157,10 +156,10 @@ let totalPriceBasket = () => {
     });
     return total
 }
-totalPriceBasket()
 
-console.log(totalPriceBasket());
-// Fonction fermeture du panier à l'affichage
-let closeBasket = () => {
-
+// Fonction vider la panier
+let remBasket = () => {
+    /*
+        Supprimer le contenu du localStorage et raffraichir l'affichage du panier
+    */
 }
