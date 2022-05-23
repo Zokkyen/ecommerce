@@ -23,7 +23,6 @@ window.addEventListener('scroll',()=>{
 /* Lecture du JSON au lancement de la page + affichage */
 let beersArray = [];
 readJson();
-console.log(beersArray)
 let i=0;
 let minusButtons = document.querySelectorAll('.minusButton');
 // minusButtons.forEach(button =>{
@@ -60,10 +59,8 @@ document.addEventListener('click', function(e){
             if (beerElement.recent_checkin_id == minusId){
                 if (beerElement.count>1){
                     beerElement.count--;
-                    console.log(beerElement)
                     }
                 amountCounter.forEach(counter=>{
-                    console.log(counter.dataset.id);
                     let parsedCounterID = counter.dataset.id.substring(6);
                     if(beerElement.recent_checkin_id == parsedCounterID){
                         counter.innerHTML=beerElement.count;
@@ -90,15 +87,18 @@ document.addEventListener('click', function(e){
         let price = 5;
         let amount = 1;
         let cartId = datasetId.substring(4);
-        //console.log(beersArray);
         beersArray.forEach(jeanlouis=>{
             if(jeanlouis.recent_checkin_id == cartId){
                 price = jeanlouis.beer.price;
                 amount = jeanlouis.count;
+                beerName = jeanlouis.beer.beer_name;
             }
         })
         let basket = JSON.parse(localStorage.getItem('basket')) ?? [];
-        basket.push({"idBeer":cartId,"quantity":amount,'price':price})
+        basket.push({"beerName":beerName,"idBeer":cartId,"quantity":amount,'price':price})
         localStorage.setItem('basket', JSON.stringify(basket));
     }
 })
+document.getElementById('openCart').addEventListener('click',updateBasket)
+document.getElementById('openCart2').addEventListener('click',updateBasket)
+document.getElementById('empty').addEventListener('click', clearBasket)
