@@ -35,8 +35,9 @@ function imageExists(image_url){
 // Fonction affichage de toutes les bières contenues dans le JSON / Tableau d'objet
 let displayAllBeers = () => {
     beersArray.forEach(jeanlouis=>{
-        if((imageExists(jeanlouis.beer.beer_label)) && (jeanlouis.beer.beer_label != "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png")) {
-            document.getElementById('product').innerHTML += 
+        //if((imageExists(jeanlouis.beer.beer_label)) && (jeanlouis.beer.beer_label != "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png")) {
+        if(imageExists(jeanlouis.beer.beer_label)) {
+            document.getElementById('product').innerHTML +=
                 `<div class="col-6 col-lg-2 col-md-3 beer">
                     <img class="beerLabel" src="${jeanlouis.beer.beer_label}">
                     <div class="beerSpecsContainer">
@@ -60,7 +61,7 @@ let displayAllBeers = () => {
 
                         <button class="btn btn-dark" data-id="cart${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
                     </div>
-                </div>`            
+                </div>`
         }
     })
 }
@@ -77,7 +78,7 @@ function changeAmountButton(){
 }
 
 function countRemove(event){
- 
+
 
 }
 function countAdd(event){

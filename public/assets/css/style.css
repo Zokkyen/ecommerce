@@ -136,7 +136,7 @@ body {
 
 .functionalities{
     display:flex;
-    flex-direction:column;  
+    flex-direction:column;
 }
 
 .addButtons {
@@ -159,7 +159,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
@@ -179,13 +179,14 @@ body {
     justify-content: space-between;
     margin-left: 27px;
     margin-right: 18px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
 .beerName {
     text-align: center;
     font-family: 'Koulen', cursive;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.0rem;
     margin-bottom: 5px;
 }
 
@@ -272,7 +273,7 @@ body {
 }
 
 @media screen and (min-width:767px){
-    .modal-dialog {  
+    .modal-dialog {
         margin-right: 2vh;
         margin-top: 2vh;
     }
