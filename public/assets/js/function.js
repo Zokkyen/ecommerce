@@ -5,6 +5,7 @@ let readJson = () => {
         return response.json();
     })
     .then(data => {
+
         /*
             - id                    : data.response.beers.items[i].recent_checkin_id     (nombre entier)
             - nom de la bouteille   : data.response.beers.items[i].beer.beer_name        (texte)
@@ -53,7 +54,7 @@ let displayAllBeers = () => {
                             <button class="minusButton btn btn-dark" data-id="minus${jeanlouis.recent_checkin_id}">
                                 <img data-id="minus${jeanlouis.recent_checkin_id}" src="public/assets/img/minus.svg">
                             </button>
-                            <div class="displayAmount" data-id="number${jeanlouis.recent_checkin_id}">0</div>
+                            <div class="displayAmount" data-id="number${jeanlouis.recent_checkin_id}">12</div>
                             <button class="plusButton btn btn-dark" data-id="plus${jeanlouis.recent_checkin_id}">
                                 <img data-id="plus${jeanlouis.recent_checkin_id}" src="public/assets/img/plus-svgrepo-com.svg">
                             </button>
@@ -64,6 +65,11 @@ let displayAllBeers = () => {
                 </div>`
         }
     })
+    var specifiedAmount = [];
+    var amountCounter = document.querySelectorAll('.displayAmount');
+    for (let j=0;j<amountCounter.length;j++){
+        specifiedAmount[j]=amountCounterValue;
+    }
 }
 
 function changeAmountButton(){
