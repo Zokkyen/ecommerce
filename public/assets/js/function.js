@@ -5,6 +5,7 @@ let readJson = () => {
         return response.json();
     })
     .then(data => {
+
         /*
             - id                    : data.response.beers.items[i].recent_checkin_id     (nombre entier)
             - nom de la bouteille   : data.response.beers.items[i].beer.beer_name        (texte)
@@ -35,6 +36,7 @@ function imageExists(image_url){
 // Fonction affichage de toutes les bières contenues dans le JSON / Tableau d'objet
 let displayAllBeers = () => {
     beersArray.forEach(jeanlouis=>{
+
         //if((imageExists(jeanlouis.beer.beer_label)) && (jeanlouis.beer.beer_label != "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png")) {
         if(imageExists(jeanlouis.beer.beer_label)) {
             document.getElementById('product').innerHTML +=
@@ -53,7 +55,7 @@ let displayAllBeers = () => {
                             <button class="minusButton btn btn-dark" data-id="minus${jeanlouis.recent_checkin_id}">
                                 <img data-id="minus${jeanlouis.recent_checkin_id}" src="public/assets/img/minus.svg">
                             </button>
-                            <div class="displayAmount" data-id="number${jeanlouis.recent_checkin_id}">0</div>
+                            <div class="displayAmount" data-id="number${jeanlouis.recent_checkin_id}">${jeanlouis.count}</div>
                             <button class="plusButton btn btn-dark" data-id="plus${jeanlouis.recent_checkin_id}">
                                 <img data-id="plus${jeanlouis.recent_checkin_id}" src="public/assets/img/plus-svgrepo-com.svg">
                             </button>
@@ -63,6 +65,7 @@ let displayAllBeers = () => {
                     </div>
                 </div>`
         }
+
     })
     console.clear();
 }
@@ -79,7 +82,6 @@ function changeAmountButton(){
 }
 
 function countRemove(event){
-
 }
 
 function countAdd(event){
