@@ -157,7 +157,9 @@ let totalPriceBasket = () => {
     });
     return total
 }
+totalPriceBasket()
 
+console.log(totalPriceBasket());
 // Fonction fermeture du panier à l'affichage
 let closeBasket = () => {
 
