@@ -64,6 +64,7 @@ let displayAllBeers = () => {
                 </div>`
         }
     })
+    console.clear();
 }
 
 function changeAmountButton(){
@@ -79,22 +80,164 @@ function changeAmountButton(){
 
 function countRemove(event){
 
-
 }
+
 function countAdd(event){
     numberToIncrease = event.target.dataset.id;
 }
 
 // Fonction affichage des bières selon une catégorie (catégories définies par un ID)
 let displayCtgBeers = (id) => {
-/*
-    Affichage des bières avec la photo, le nom, le prix et la contenance
-*/
+    let beersArrayCateg = document.getElementsByClassName('beer');
+    for (const [key, value] of Object.entries(beersArrayCateg)) {
+
+        // Obtenir l'id des bières pour le foreach des catégories pays et degré
+        let idOfBeer = value.lastElementChild.childNodes[7].childNodes[3].attributes[1].value.split('cart');
+
+        // Toutes les bières
+        if(id == "allBeersCateg") {
+            value.style.display = "flex";
+        }
+
+        /* Affichage suivant le type de bière */
+            // Catégorie Blonde
+            if(id == "blonde"){
+                if((value.lastElementChild.childNodes[3].innerText == "Witbier") || (value.lastElementChild.childNodes[3].innerText == "Hefeweizen") || (value.lastElementChild.childNodes[3].innerText == "Lager") || (value.lastElementChild.childNodes[3].innerText == "Pale Lager") || (value.lastElementChild.childNodes[3].innerText == "American Light Lager") || (value.lastElementChild.childNodes[3].innerText == "Vienna Lager") || (value.lastElementChild.childNodes[3].innerText == "Pale Lager") || (value.lastElementChild.childNodes[3].innerText == "American Blonde Ale") || (value.lastElementChild.childNodes[3].innerText == "Dunkel Munich Lager") || (value.lastElementChild.childNodes[3].innerText == "Saison / Farmhouse Ale") || (value.lastElementChild.childNodes[3].innerText == "Golden Ale") || (value.lastElementChild.childNodes[3].innerText == "Bock") || (value.lastElementChild.childNodes[3].innerText == "Saison") || (value.lastElementChild.childNodes[3].innerText == "Farmhouse Ale") || (value.lastElementChild.childNodes[3].innerText == "Harvest Ale")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Rousse
+            if(id == "rousse"){
+                if((value.lastElementChild.childNodes[3].innerText == "Scotch Ale / Wee Heavy") || (value.lastElementChild.childNodes[3].innerText == "Irish Red Ale")  || (value.lastElementChild.childNodes[3].innerText == "American Red Ale")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Brune
+            if(id == "brune"){
+                if((value.lastElementChild.childNodes[3].innerText == "American Brown Ale") || (value.lastElementChild.childNodes[3].innerText == "Belgian Strong Dark Alen")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Blanche
+            if(id == "blanche"){
+                if((value.lastElementChild.childNodes[3].innerText == "American Pale Wheat Ale") || (value.lastElementChild.childNodes[3].innerText == "Winter Warmer")  || (value.lastElementChild.childNodes[3].innerText == "Dunkelweizen")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Triple
+            if(id == "triple"){
+                if((value.lastElementChild.childNodes[3].innerText == "American Strong Ale")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie IPA
+            if(id == "ipa"){
+                if((value.lastElementChild.childNodes[3].innerText == "White IPA") || (value.lastElementChild.childNodes[3].innerText == "Imperial / Double IPA")  || (value.lastElementChild.childNodes[3].innerText == "American IPA") || (value.lastElementChild.childNodes[3].innerText == "Belgian IPA") || (value.lastElementChild.childNodes[3].innerText == "English IPA") || (value.lastElementChild.childNodes[3].innerText == "American Pale Ale") || (value.lastElementChild.childNodes[3].innerText == "Black IPA") || (value.lastElementChild.childNodes[3].innerText == "IPL (India Pale Lager)") || (value.lastElementChild.childNodes[3].innerText == "English Pale Ale") || (value.lastElementChild.childNodes[3].innerText == "American Pale Ale")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Stout
+            if(id == "stout"){
+                if((value.lastElementChild.childNodes[3].innerText == "Porter") || (value.lastElementChild.childNodes[3].innerText == "Baltic Porter")  || (value.lastElementChild.childNodes[3].innerText == "Imperial Stout") || (value.lastElementChild.childNodes[3].innerText == "Oatmeal Stout")) {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Sour
+            if(id == "sour"){
+                if(value.lastElementChild.childNodes[3].innerText == "Sour") {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+            // Catégorie Lambic
+            if(id == "lambic"){
+                if(value.lastElementChild.childNodes[3].innerText == "Cider") {
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            }
+
+        /* Affichage suivant le pays */
+        if(id == "france"){
+            beersArray.forEach(element => {
+                if((element.brewery.country_name == "France") && (Number(idOfBeer[1]) == element.recent_checkin_id)){
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            });
+        }
+
+        if(id == "europe"){
+            //console.log(beersArray)
+            beersArray.forEach(element => {
+                if((element.brewery.country_name == "Germany") && (Number(idOfBeer[1]) == element.recent_checkin_id)){
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            });
+        }
+
+        if(id == "monde"){
+            beersArray.forEach(element => {
+                if(((element.brewery.country_name == "United States") || (element.brewery.country_name == "Mexico") || (element.brewery.country_name == "Thailand")) && (Number(idOfBeer[1]) == element.recent_checkin_id)){
+                    value.style.display = "flex";
+                }
+                else {
+                    value.style.display = "none";
+                }
+            });
+        }
+
+        /* Affichage suivant le degré d'alcool */
+
+        if(id == "lowAlcool"){
+        }
+        if(id == "modAlcool"){
+        }
+        if(id == "highAlcool"){
+        }
+    }
 }
 
 // Fonction incrément de la quantité d'un article avec son id sur le site
 let addQuantity = (id) => {
-
 }
 
 // Fonction décrément de la quantité d'un article en fonction de son id sur le site

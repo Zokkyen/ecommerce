@@ -54,34 +54,34 @@
         <!-- Offcanvas -->
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><strong>Catégories</strong></h5>
+                <h4 class="offcanvas-title" id="offcanvasScrollingLabel"><strong>Catégories</strong></h4>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body bg-dark text-white">
-
-                <h3>Types de bières</p>
+                <h5 id="allBeersCateg" data-bs-dismiss="offcanvas">Toutes les bières</h5>
+                <h5>Types de bières</h5>
                     <ul>
-                        <li>Blonde</li>
-                        <li>Rousse</li>
-                        <li>Brune</li>
-                        <li>Blanche</li>
-                        <li>Triple</li>
-                        <li>IPA</li>
-                        <li>Stout</li>
-                        <li>Sour</li>
-                        <li>Lambic</li>
+                        <li id="blonde" data-bs-dismiss="offcanvas">Blonde</li>
+                        <li id="rousse" data-bs-dismiss="offcanvas">Rousse</li>
+                        <li id="brune" data-bs-dismiss="offcanvas">Brune</li>
+                        <li id="blanche" data-bs-dismiss="offcanvas">Blanche</li>
+                        <li id="triple" data-bs-dismiss="offcanvas">Triple</li>
+                        <li id="ipa" data-bs-dismiss="offcanvas">IPA</li>
+                        <li id="stout" data-bs-dismiss="offcanvas">Stout</li>
+                        <li id="sour" data-bs-dismiss="offcanvas">Sour</li>
+                        <li id="lambic" data-bs-dismiss="offcanvas">Lambic</li>
                     </ul>
-                <h3>Brasserie</h3>
+                <h5>Brasserie</h5>
                     <ul>
-                        <li>France</li>
-                        <li>Europe</li>
-                        <li>Monde</li>
+                        <li id="france" data-bs-dismiss="offcanvas">France</li>
+                        <li id="europe" data-bs-dismiss="offcanvas">Europe</li>
+                        <li id="monde" data-bs-dismiss="offcanvas">Monde</li>
                     </ul>
-                <h3>Degré d'alcool</h3>
+                <h5>Degré d'alcool</h5>
                     <ul>
-                        <li>0-5%</li>
-                        <li>5-9%</li>
-                        <li>9+%</li>
+                        <li id="lowAlcool" data-bs-dismiss="offcanvas">0-5%</li>
+                        <li id="modAlcool" data-bs-dismiss="offcanvas">5-9%</li>
+                        <li id="highAlcool" data-bs-dismiss="offcanvas">9+%</li>
                     </ul>
             </div>
         </div>
