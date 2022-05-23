@@ -77,6 +77,10 @@ body {
         left:25px;
         z-index:5;
     }
+    .burgerBtn {
+        width: 25%;
+        height: 25%;
+    }
     .backgroundImage {
         height: 70vh;
     }
@@ -156,7 +160,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -182,7 +186,7 @@ body {
     text-align: center;
     font-family: 'Koulen', cursive;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .beerType {

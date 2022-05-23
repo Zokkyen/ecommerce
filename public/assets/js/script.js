@@ -34,7 +34,6 @@ minusButtons.forEach(button =>{
 })
 
 document.addEventListener('click', function(e){
-            numberToDecrease = e.target.dataset.id;
-            console.log(numberToDecrease);
+    numberToDecrease = e.target.dataset.id;
+    console.log(numberToDecrease);
 })
-

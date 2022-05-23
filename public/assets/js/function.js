@@ -62,8 +62,6 @@ let displayAllBeers = () => {
                     </div>
                 </div>`            
         }
-
-
     })
 }
 
