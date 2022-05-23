@@ -40,6 +40,16 @@ window.addEventListener('click', (event) => {
     }
 })
 
+window.addEventListener('click', (event) => {
+    if(event.target.innerText == "Ajouter au panier") {
+        var modalAddBasket = new bootstrap.Modal(document.getElementById('modalAddBasket'), {
+            keyboard: false
+        })
+        modalAddBasket.show();
+    }
+})
+
+
 /* Gestion de la quantité */
 document.addEventListener('click', function(e){
     let amountCounter = document.querySelectorAll('.displayAmount');
@@ -80,7 +90,7 @@ document.addEventListener('click', function(e){
         let price = 5;
         let amount = 1;
         let cartId = datasetId.substring(4);
-        console.log(beersArray);
+        //console.log(beersArray);
         beersArray.forEach(jeanlouis=>{
             if(jeanlouis.recent_checkin_id == cartId){
                 price = jeanlouis.beer.price;

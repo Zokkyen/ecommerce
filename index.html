@@ -101,7 +101,7 @@
 
     <main>
         <!-- Les produits du site -->
-        <div class="container-fluid pl-2 pr-2">
+        <div class="container-fluid">
             <div class="row m-0" id="product">
             </div>
         </div>
@@ -149,7 +149,25 @@
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vider le panier</button>
+                    <button type="button" class="btn btn-secondary">Vider le panier</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation d'ajout dans le panier -->
+    <div class="modal modal2 fade" id="modalAddBasket" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel2">Votre achat est confirmé !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal2" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center text-center">
+                    <img src="public/assets/img/ok.svg" alt="Validation image" class="validPicture">
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 </div>
             </div>

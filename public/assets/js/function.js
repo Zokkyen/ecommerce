@@ -65,7 +65,6 @@ let displayAllBeers = () => {
                     </div>
                 </div>`
         }
-
     })
     console.clear();
 }
