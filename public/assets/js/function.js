@@ -37,11 +37,11 @@ function imageExists(image_url){
 let displayAllBeers = () => {
     beersArray.forEach(jeanlouis=>{
 
-        //if((imageExists(jeanlouis.beer.beer_label)) && (jeanlouis.beer.beer_label != "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png")) {
-        if(imageExists(jeanlouis.beer.beer_label)) {
+        // if((imageExists(jeanlouis.beer.beer_label)) && (jeanlouis.beer.beer_label != "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png")) {
+        // if(imageExists(jeanlouis.beer.beer_label)) {
             document.getElementById('product').innerHTML +=
                 `<div class="col-6 col-lg-2 col-md-3 beer">
-                    <img class="beerLabel" src="${jeanlouis.beer.beer_label}">
+                    <img class="beerLabel" src="public/assets/img/nolonger.png">
                     <div class="beerSpecsContainer">
                         <div class="beerName">${jeanlouis.beer.beer_name}</div>
                         <div class="beerType">${jeanlouis.beer.beer_style}</div>
@@ -64,7 +64,7 @@ let displayAllBeers = () => {
                         <button class="btn btn-dark" data-id="cart${jeanlouis.recent_checkin_id}">Ajouter au panier</button>
                     </div>
                 </div>`
-        }
+        // }
     })
 
 }
