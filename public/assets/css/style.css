@@ -1,0 +1,327 @@
+/*---------- Initialisation du HTML ----------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------- Partie du Header ----------*/
+
+.backgroundImage {
+    background-image: url("../img/header-brasserie-biere.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.nav {
+    top: 0px;
+}
+
+.logoMobile {
+    width: 8%;
+}
+
+.title1 {
+    position: absolute;
+    font-weight: 500;
+    color: white;
+    top: 12vh;
+}
+
+.title2 {
+    position: absolute;
+    font-weight: 500;
+    color: white;
+    top: 38vh;
+}
+
+.logoDesktop {
+    height: 200px;
+}
+
+@media screen and (min-width:768px) {
+    #header{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:30vh;
+        background-color: #333;
+    }
+    .navbar{
+        display:none;
+    }
+    #cartContainer{
+        position: fixed;
+        display: flex;
+        height: 50px;
+        width: 100px;
+        background-color:#212529;
+        top:25px;
+        right:25px;
+        z-index:5;
+    }
+    #burgerContainer{
+        position: fixed;
+        height:50px;
+        width: 100px;
+        background-color:#212529;
+        top:25px;
+        left:25px;
+        z-index:5;
+    }
+    .burgerBtn {
+        width: 25%;
+        height: 25%;
+    }
+    .backgroundImage {
+        height: 70vh;
+    }
+    .title1 {
+        position: absolute;
+        top: 25vh;
+        left: 15vh;
+    }
+    .title2 {
+        position: absolute;
+        top: 40vh;
+        right: 15vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #header > img{
+        display:none;
+    }
+    #cartContainer > button{
+        display:none;
+    }
+    #burgerContainer > button{
+        display:none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #header > img{
+        display:none;
+    }
+    #cartContainer > button{
+        display:none;
+    }
+    #burgerContainer > button{
+        display:none;
+    }
+}
+
+/*---------- Offcanvas catégories ----------*/
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+ul li {
+    font-size: 1.1rem;
+    list-style: square;
+}
+
+ul li:hover, #allBeersCateg:hover {
+    color: rgb(221, 99, 0);
+    cursor: pointer;
+}
+
+
+/*---------- Partie du Main ----------*/
+
+.beer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid white;
+    background-color: rgba(124, 56, 0, 0.425);
+    height: 350px;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 20px;
+}
+
+.functionalities{
+    display:flex;
+    flex-direction:column;
+}
+
+.addButtons {
+    display:flex;
+    justify-content:center;
+}
+
+.beerLabel{
+    max-height:50%;
+    max-width:50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.addButtons > button {
+    border-radius:100px;
+    color:white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.addButtons > button > img{
+    height: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.addButtons > .displayAmount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.priceCapacity {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27px;
+    margin-right: 18px;
+    margin-bottom: 10px;
+}
+
+.beerName {
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    white-space: pre-line;
+}
+
+.beerType {
+    text-align: center;
+    margin-bottom: 10px;
+    /* max-width: 110px; */
+}
+
+.beerSpecsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: flex-end;
+}
+
+.functionalities > button{
+    width: 150px;
+    margin: 10px;
+}
+
+@media screen and (min-width:767px){
+    .priceCapacity {
+        margin-left: 27px;
+        margin-right: 18px;
+    }
+}
+
+/*---------- Partie du Footer ----------*/
+
+.blankFooter {
+    height:175px;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 100%;
+    position:fixed;
+    margin: 0;
+    bottom: 0;
+    background-color: black;
+    transition: transform 0.4s;
+}
+
+.facebookLogo {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.instaLogo {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.scroll-down .footer {
+    transform: translate3d(0, 100%, 0);
+}
+
+.scroll-up .footer {
+    transform: none;
+}
+
+@media screen and (min-width:767px){
+    .footer{
+        height: 120px;
+    }
+    .blankFooter {
+        height: 120px;
+    }
+}
+
+/*---------- Le Panier ----------*/
+
+.modal {
+    left: unset;
+    right: 0;
+    width: 80%;
+    height: auto;
+}
+
+.modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.validPicture {
+    width: 50px;
+}
+
+@media screen and (min-width:767px){
+    .modal>.modal-dialog {
+        margin-right: 2vh;
+        margin-top: 2vh;
+    }
+
+    .modal2>.modal-dialog {
+        margin-right: 65vh;
+        margin-top: 35vh;
+    }
+}
